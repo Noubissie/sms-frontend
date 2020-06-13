@@ -1,0 +1,9 @@
+/* @media print{
+    .printed{
+        font-size: 60%;
+    }
+  
+} */
+.printed{
+    font-size: 60%;
+}

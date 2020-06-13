@@ -1,0 +1,107 @@
+.validationContainer{
+    /* background-image:url('./popup.jpg'); */
+    
+    background-size: contain;
+    filter: brightness(100%) contrast(100%) saturate(120%);
+    position: absolute;
+    top: 15%;bottom:15%;
+    right:15%; left:15%;
+    /* margin: auto; */
+    opacity: 1;
+    scroll-behavior: smooth;
+    overflow: scroll;
+    background-color:white;
+    text-align:left;
+     
+    border:outset 5px purple;
+    font-size: 100%;
+    display:grid;
+    border-radius: 15px;
+    grid-template-columns:20%   30% 22% 28%;
+    
+    grid-row-gap: none;
+
+
+     
+}
+.header{
+    /* margin-bottom:1%; */
+    color:white;
+    position:sticky;
+    top:0px;
+    grid-column-start:1;
+    grid-column-end:5;
+    text-align:center;
+    background-color:purple
+}
+.footer{
+    color:white;
+    position:sticky;
+    bottom:0px;
+    grid-column-start:1;
+    grid-column-end:5;
+    text-align:center;
+    background-color:purple
+
+}
+/* .validationContainer:nth-child(odd){
+    background-color: rgba(122, 212, 95,0.5);
+} */
+.divLable{
+    /* border-bottom:solid ; */
+    font-size: 100%;
+    font-weight: bold;
+    border-bottom: outset blue;
+    
+    /* margin-bottom: 2%; */
+    /* background-color: rgba(122, 212, 95,0.5); */
+    /* border-right:solid green */
+
+    /* overflow-wrap: break-word; */
+}
+.divItem{
+    /* border-bottom: solid ; */
+    overflow-wrap: break-word;
+    border-bottom: solid blue;
+}
+/* .divLable:nth-child(even){
+    background: rgba(38, 38, 39,1);
+} */
+.buttons{
+    /* float: left; */
+    padding: 1% 5% 1% 5%;
+    border-radius: 15px;
+    margin: 0.5%;
+    
+    /* background-color: red; */
+    /* color:purple; */
+    font-size: 120%;
+    animation-name: buttonBlink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+button:hover{
+    background-color: blue;
+    color: white;
+    
+}
+@keyframes buttonBlink{
+    from{background-color: red;}
+    to{background-color:none}
+}
+
+/* .validationContainer::-webkit-scrollbar {
+    width: 6px;
+}
+.validationContainer::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px rgba(131, 15, 15, 0.3);
+    box-shadow: inset 0 0 1px rgba(131, 15, 15, 0.3);
+}
+.validationContainer::-webkit-scrollbar-thumb {
+  background-color: rgb(148, 141, 141);
+  outline: 0px none rgb(236, 236, 236);
+} */
+
+@media screen and (max-width:600px){
+    
+}

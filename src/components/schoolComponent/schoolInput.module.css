@@ -1,0 +1,117 @@
+.SchoolApp{
+    background-image: url("./school\ registration2.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:sticky;
+    top: 0px;
+    /* padding: 10% 0% 0% 0%; */
+    height: 100vh;
+    overflow: scroll;
+    
+    border:solid grey;
+    border-radius: 15px;
+    
+}
+.SchoolApp:hover{
+    border: outset green;
+    /* perspective: 800px; */
+    transform: scale3d(1.1,1,3);
+    z-index: 2;
+}
+.SchoolAppBox{
+    /* border:solid red; */
+    margin: 30% 5% 0% 5% ;
+}
+/* .heading{
+    font-size: 200%;
+    border:solid grey;
+} */
+/* .schoolName{
+    height: 100vh;
+    padding: 0 2% 2% 2%;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+} */
+/*
+.sectionDivContainer{
+    border: solid white;
+    display: grid;
+    grid-template-columns: 7% 83% 10%;
+    margin: 0% 0% 1% 0%;
+}
+.inputStyle{
+    width: 100%;
+    border-radius: 15px 0px 0 15px;
+    padding:2% 0 2% 2%;
+    margin: 0%;
+    font-size: 110%;
+}
+.inputButton{
+    border-left: solid black;
+    border-radius:0 15px 15px 0;
+    padding:2% 0 2% 0%;
+    font-weight: bolder;
+    background-color:grey;     
+    color: yellow;
+    font-size: 120%;
+}
+.fontAwesome{
+    color:rgb(231, 227, 233);
+    
+    margin: auto;
+    font-size:300%;
+    height: 70%;
+    background-color: rgb(17, 6, 78);
+}
+.Schoollocation{
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-row-gap: 6%;
+    grid-column-gap: 1%;
+}
+.SchoollocationInput{
+    width: 95%;
+    border-radius: 15px ;
+    padding:3% 0 3% 2%;
+    margin: 0%;
+    font-size: 110%;
+} */
+/* @media screen and (max-width:1200px){ */
+    /* .sectionDivContainer{
+        grid-template-columns: 10% 80% 10%;
+    } */
+    /* .heading{
+        font-size:120%;
+    }
+    .fontAwesome{
+        height: 100%;
+        font-size:200%;
+       
+    }
+
+} */
+@media screen and (max-width:600px){
+    .SchoolAppBox{
+        margin: 30% 10% 0%10% ;
+    }
+
+}
+/* @media screen and (max-width:300px){
+    .sectionDivContainer{
+       
+        grid-template-columns: 90% 10%;
+        
+    }
+    .heading{
+        font-size:100%;
+    }
+    .fontAwesome{
+        display: none;
+    }
+    .inputButton{
+        font-size: 70%;
+    }
+} */
+
+

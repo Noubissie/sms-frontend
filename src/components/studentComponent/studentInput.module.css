@@ -1,0 +1,213 @@
+.ImgFile{
+    border-radius: 15px 0 0 15px;
+}
+body{
+    filter: brightness(100%) contrast(100%) saturate(160%);  
+}
+.studentInformationContainer{
+    background-image: url("./image/smsRback.jpg");
+    display: grid;
+    position: sticky;
+    overflow: scroll;
+    grid-template-columns: 20%  80% ;
+    height: 99.5vh; 
+    z-index: 1;
+    text-decoration: none;
+    border: solid blue 5px;
+    color: black;
+    padding-top: 4%;
+    /* padding: 0 5% 0 5%; */
+   
+    /* perspective: 100px; */
+}
+.div1{
+    position:sticky;
+    top:0px;
+    
+    height:100vh;
+    /* overflow:scroll */
+}
+/* .studentInformationContainer::-webkit-scrollbar {
+    width: 6px;
+}
+.studentInformationContainer::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px rgba(231, 43, 43, 0.3);
+    box-shadow: inset 0 0 1px rgba(131, 15, 15, 0.3);
+}
+.studentInformationContainer::-webkit-scrollbar-thumb {
+  background-color: rgb(148, 141, 141);
+  outline: 0px none rgb(236, 236, 236);
+} */
+.studentNameContainer,.studentGuidantContainer{
+    display:grid;
+    border: inset;
+    height: fit-content;
+    z-index: 1; 
+    grid-template-columns: 80% 20%;
+    border-radius: 0px 0px 0 15px;
+    text-align:center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.heading{
+    border-Bottom:solid grey;
+    grid-column-start:1;
+    grid-column-end:3;
+    color: white;
+    text-align: center;
+    font-size: 90%;
+    /* background-color: rgb(4, 4, 73); */
+}
+.studentPersonalInformation{
+    padding:2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    display:grid;
+    height: fit-content;
+    grid-template-columns: 100%;
+    grid-row: auto auto;
+}
+/* .studentInformationContainer  select, input{
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 4%;
+    border:solid blue 1px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 120%;
+} */
+.customFile{
+    border-radius: 15px;
+    margin-bottom: 10%;
+    border:solid blue 1px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.form1{
+    width: 20px;
+    display: grid;
+    grid-template-columns: 20% 10% 70%;
+}
+
+/* .studentInformationContainer select{
+    width: 96%;
+    padding: 0%;
+    background-color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 120%;
+} */
+
+.imgIcon{
+    background-size: 100% 100%;
+    position: sticky;
+    top: 0%;
+    background-position: center;
+    border:solid goldenrod 2px;
+    width: 100%;
+    height: 40%;
+    background-repeat:no-repeat;
+    border-radius: 100%;
+   
+}
+
+.screenfill{
+    border:inset ;
+    text-align: center;
+    padding: 0 20% 0 20%;
+    border-radius:15px 0px 0px 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* .screenfill, input{
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 0%;
+    border:solid blue 1px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    font-size: 120%;
+} */
+.submitContainer{
+    background-color:rgb(104, 104, 104);
+    position:sticky;
+    bottom:0vh;
+    text-align:center;
+}
+
+.submitButton{
+    margin:1%;
+    padding: 1% 2% 1% 2%;
+    color:blue;
+    border-radius: 15px;
+}
+@media screen and (min-width:610px) and (max-width:1000px) {
+    body {
+        
+        background-size: 100% 100%;
+    }
+    
+    .studentNameContainer{
+        font-size: 15px;
+    }
+    
+    .submitContainer{
+        padding: 2% 0 2% 0;
+        bottom:1vh;
+    }
+
+    label{
+        font-size: 100%;
+        color: red;
+    }
+    
+    .screenfill{
+        padding: 0%;
+    }
+}
+.divContainer{
+    border-radius:15px;
+    position: fixed;
+    background-color:rgba(0,0,0, 0.5);
+    width:100%;
+    height:100%;
+    top:0;
+    right:0;left:0;bottom:0;margin:auto;
+}
+@media screen and (max-width: 600px) {
+    body {
+        background-size: 100% 100%;
+    }
+    .studentInformationContainer{
+        grid-template-columns: auto ;
+        position: absolute;
+        
+    }
+    .studentNameContainer{
+        font-size:100%;
+        border-radius: 15px;
+    }
+    .imgIcon{
+        background-position: center ; 
+        border:solid goldenrod 2px;
+        width: 100%;
+        height: 50%;
+    } 
+    .studentInformationContainer  input,select{
+        border:solid blue 1px;
+        font-size: 100%;
+    }
+    
+    /* .studentInformationContainer ~ select{
+        width: 96%;
+        font-size: 100%;
+        border:solid blue 1px;
+    } */
+    .submitContainer{
+        padding: 3% 0 3% 0;
+        bottom:0vh;
+    }
+    .screenfill{
+       padding: 0;
+    }
+    
+}
